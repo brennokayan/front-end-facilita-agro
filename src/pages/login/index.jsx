@@ -55,7 +55,7 @@ const navigate = useNavigate();
             />
             <TextField
               margin="normal"
-              required
+              // required
               fullWidth
               label="Senha"
               type="password"
