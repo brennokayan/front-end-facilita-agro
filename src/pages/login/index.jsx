@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { Container, Box, TextField, Button, Typography } from "@mui/material";
 import { isLogged, login } from "../../utils/login";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         if (email === "mauro.souza@facil.com" && password === "123456") {
             login("token", "CONSUMIDOR");
-            window.location.href = "/consumidor";
+            navigate("/consumidor");
         } else if (email === "joao.silva@facil.com" && password === "123456") {
             login("token", "PRODUTOR");
-            window.location.href = "/produtor";
+            navigate("/produtor");
         }else{
             alert("Email ou senha incorretos!");
         }

@@ -13,8 +13,10 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { DoorIcon, DoorOpenIcon, ListIcon, X } from "@phosphor-icons/react";
 import { getTypeUser, logout } from "../utils/login";
+import { useNavigate } from "react-router-dom";
 
 function ResponsiveAppBar() {
+    const navigate = useNavigate();
   function TradeTypeUserButtons() {
     return (
       <>
@@ -22,19 +24,19 @@ function ResponsiveAppBar() {
           <>
             <Box sx={{ flexGrow: 1, display: "flex" }}>
               <Button
-                onClick={() => (window.location.href = `/consumidor`)}
+                onClick={() => (navigate("/consumidor"))}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 Pág. Inicial
               </Button>
               <Button
-                onClick={() => (window.location.href = `/pedido-compra`)}
+                onClick={() => (navigate("/pedido-compra"))}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 Pedidos
               </Button>
               <Button
-                onClick={() => (window.location.href = `/shop`)}
+                onClick={() => (navigate("/shop"))}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 Loja
@@ -48,13 +50,13 @@ function ResponsiveAppBar() {
           <>
             <Box sx={{ flexGrow: 1, display: "flex" }}>
               <Button
-                onClick={() => (window.location.href = `/produtor`)}
+                onClick={() => (navigate("/produtor"))}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 Pág. Inicial
               </Button>
               <Button
-                onClick={() => (window.location.href = `/pedido-venda`)}
+                onClick={() => (navigate("/pedido-venda"))}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 Pedidos
