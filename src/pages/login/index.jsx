@@ -9,10 +9,10 @@ export default function LoginScreen() {
 const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (email === "mauro.souza@facil.com" && password === "123456") {
+        if (email === "consumidor@facil.com" && password === "") {
             login("token", "CONSUMIDOR");
             navigate("/consumidor");
-        } else if (email === "joao.silva@facil.com" && password === "123456") {
+        } else if (email === "produtor@facil.com" && password === "") {
             login("token", "PRODUTOR");
             navigate("/produtor");
         }else{
