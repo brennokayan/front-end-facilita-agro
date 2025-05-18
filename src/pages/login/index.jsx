@@ -46,7 +46,7 @@ const navigate = useNavigate();
             FACILIT<span style={{ color: "#4CAF50" }}>AGRO</span>
           </Typography>
           <Box component="form" sx={{ mt: 1, width: "100%" }} onSubmit={handleSubmit}>
-            <TextField
+            {/* <TextField
               margin="normal"
               required
               fullWidth
@@ -63,15 +63,26 @@ const navigate = useNavigate();
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-            />
+            /> */}
             <Button
-              type="submit"
+              type="button"
+              onClick={() => {login("token", "CONSUMIDOR"); navigate("/consumidor")}}
               fullWidth
               variant="contained"
               color="primary"
               sx={{ mt: 3, mb: 2 }}
             >
-              Entrar
+              Entrar com perfil consumidor
+            </Button>
+             <Button
+              type="button"
+              onClick={() => {login("token", "PRODUTOR"); navigate("/produtor")}}
+              fullWidth
+              variant="contained"
+              color="primary"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Entrar com perfil produtor
             </Button>
             <Button
               type="button"

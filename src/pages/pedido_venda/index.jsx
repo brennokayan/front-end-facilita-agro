@@ -33,6 +33,12 @@ export default function SalesOrderScreen() {
       consumer: "Mauro Souza",
       status: "PENDENTE",
     },
+    {
+      id: "SO3004",
+      date: "18/05/2025",
+      consumer: "",
+      status: "PENDENTE",
+    },
   ];
 
   return (

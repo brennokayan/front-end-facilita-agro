@@ -18,6 +18,7 @@ export default function ProducerScreen() {
     { id: "PR001", name: "Tomate Orgânico", price: "R$ 6,00/kg" },
     { id: "PR002", name: "Alface Crespa", price: "R$ 2,50/un" },
     { id: "PR003", name: "Pepino", price: "R$ 4,20/kg" },
+    { id: "PR004", name: "Alface", price: "R$ 3,00/kg" },
   ];
 
   return (
@@ -53,7 +54,7 @@ export default function ProducerScreen() {
                 <Card elevation={2}>
                   <CardContent>
                     <Typography variant="subtitle1" gutterBottom>
-                      {prod.name}
+                       {prod.id} - {prod.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       {prod.price}

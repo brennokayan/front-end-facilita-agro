@@ -21,7 +21,8 @@ export default function ShopScreen() {
   const products = [
     { id: 'P001', name: 'Maçã Orgânica', price: 'R$ 4,50/kg', type: 'COMPRA' },
     { id: 'P002', name: 'Tomate', price: 'R$ 5,00/kg', type: 'COMPRA' },
-    { id: 'P003', name: 'Pepino', price: 'R$ 3,80/kg', type: 'COMPRA' }
+    { id: 'P003', name: 'Pepino', price: 'R$ 3,80/kg', type: 'COMPRA' },
+    { id: 'P004', name: 'Alface', price: 'R$ 2,50/un', type: 'COMPRA' },
   ];
 
   const filtered = products.filter((p) => p.type === filter);
