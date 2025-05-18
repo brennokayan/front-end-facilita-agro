@@ -76,7 +76,7 @@ const navigate = useNavigate();
               fullWidth
               variant="text"
               color="primary"
-              href="https://back-end-facilita-agro.onrender.com"
+              href="https://back-end-facilita-agro.onrender.com/api/documentacao"
             >
               Nossa API
             </Button>
