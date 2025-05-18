@@ -12,13 +12,16 @@ import {
   Divider,
 } from "@mui/material";
 import ResponsiveAppBar from "../../components/side_bar";
+import cenoura from "../../assets/cenoura.png";
+import maca from "../../assets/maçã.png";
+import mamao_papaya from "../../assets/mamão papaya.png";
 
 export default function ConsumerScreen() {
   // Fictitious data
   const favorites = [
-    { id: "P001", name: "Maçã Orgânica", price: "R$ 4,50/kg" },
-    { id: "P002", name: "Mamão Papaya", price: "R$ 3,20/un" },
-    { id: "P003", name: "Cenoura Fresca", price: "R$ 2,80/kg" },
+    { id: "P001", name: "Maçã Orgânica", price: "R$ 4,50/kg", img: maca },
+    { id: "P002", name: "Mamão Papaya", price: "R$ 3,20/un", img: cenoura },
+    { id: "P003", name: "Cenoura Fresca", price: "R$ 2,80/kg", img: mamao_papaya },
   ];
 
   const recentOrders = [
@@ -48,6 +51,7 @@ export default function ConsumerScreen() {
               <Grid item xs={12} sm={4} key={item.id}>
                 <Card elevation={2}>
                   <CardContent>
+                    <img src={item.img} alt="imagem do produto" width={"180px"} />
                     <Typography variant="subtitle1" gutterBottom>
                       {item.name}
                     </Typography>
