@@ -71,10 +71,11 @@ export default function LoginScreen() {
               Entrar
             </Button>
             <Button
-              type="submit"
+              type="button"
               fullWidth
               variant="text"
               color="primary"
+              href="https://back-end-facilita-agro.onrender.com"
             >
               Nossa API
             </Button>
