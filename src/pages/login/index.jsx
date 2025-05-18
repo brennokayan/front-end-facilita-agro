@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Box, TextField, Button, Typography } from "@mui/material";
 import { isLogged, login } from "../../utils/login";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo 3.png";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
@@ -33,15 +34,16 @@ const navigate = useNavigate();
             alignItems: "center",
             justifyContent: "center",
             height: "100vh" - 36,
-            mt: {xs: 24, md: 16},
+            mt: {xs: 12, md: 0},
             
           }}
         >
-          <Typography variant="h4" component="h1" gutterBottom>
+          <img src={logo} alt="Logo Facilitagro" width={"180px"} />
+          <Typography variant="h5" component="h1" gutterBottom>
             Bem-vindo ao
           </Typography>
-          <Typography variant="h5" component="h1" gutterBottom>
-            Facilita Agro
+          <Typography variant="h4" component="h1" gutterBottom fontFamily={"sans-serif"}>
+            FACILIT<span style={{ color: "#4CAF50" }}>AGRO</span>
           </Typography>
           <Box component="form" sx={{ mt: 1, width: "100%" }} onSubmit={handleSubmit}>
             <TextField
