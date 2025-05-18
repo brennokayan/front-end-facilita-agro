@@ -20,8 +20,8 @@ export default function ConsumerScreen() {
   // Fictitious data
   const favorites = [
     { id: "P001", name: "Maçã Orgânica", price: "R$ 4,50/kg", img: maca },
-    { id: "P002", name: "Mamão Papaya", price: "R$ 3,20/un", img: cenoura },
-    { id: "P003", name: "Cenoura Fresca", price: "R$ 2,80/kg", img: mamao_papaya },
+    { id: "P002", name: "Mamão Papaya", price: "R$ 3,20/un", img: mamao_papaya },
+    { id: "P003", name: "Cenoura Fresca", price: "R$ 2,80/kg", img: cenoura },
   ];
 
   const recentOrders = [
